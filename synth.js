@@ -90,7 +90,7 @@ module.exports = function(freq, duration){
 
   synth.flang = flanger(50);
 
-  synth.delay = Delay(8000, .6, true, .5);
+  synth.delay = Delay(80, .5);
   synth.d2 = Delay(33, .3);  
   synth.d3 = Delay(66, .1);
   synth.reverb = reverb();

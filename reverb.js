@@ -1,9 +1,9 @@
 var Osc = require('./oscillators')();
-
+var Buffer = require('buffer').Buffer;
 module.exports = function(delay, attenuation){
 
     function reverb(){
-      var f = reverb;
+	var f = reverb;
       var d = f.delay // Math.round((f.delay) + Math.round(f.shift * this.oz[f.wave](this.t, f.lof)));
 	var z = 1;
       var verb = 0;
@@ -22,7 +22,7 @@ module.exports = function(delay, attenuation){
     f.shift = 5;
     f.io = new Buffer(((f.delay + f.shift) * 4));
     f.l = f.io.length;
-    f.io.fill(0);
+//    f.io.fill(0);
     f.e = 2.71828;
     f.wave = 'sine';
     f.lof = .5;

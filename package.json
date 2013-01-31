@@ -1,10 +1,13 @@
 {
   "name": "jynth",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "description": "chainable synth with smattering of effects",
   "main": "synth.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies" : {
+    "since-when" : ""
   },
   "repository": {
     "type": "git",
